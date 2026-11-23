@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>AquaMotionVR</AssemblyName>
+    <RootNamespace>AquaMotionVR</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <Optimize>true</Optimize>
+    <TieredPGO>false</TieredPGO>
+    <TieredCompilationQuickJitForLoops>true</TieredCompilationQuickJitForLoops>
+    <NoWarn>CS0649;CS0169;CS0108;CS0618;CS8981</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="openvr_api.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="fonts.bin" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="actions.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="bindings_knuckles.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="bindings_oculus_touch.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+
+</Project>

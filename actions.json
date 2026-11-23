@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "minimum_required_version": "1.0.0",
+  "actions": [
+    { "name": "/actions/common/in/grip_left",  "requirement": "optional", "type": "boolean" },
+    { "name": "/actions/common/in/grip_right", "requirement": "optional", "type": "boolean" },
+    { "name": "/actions/common/out/haptic",    "requirement": "optional", "type": "vibration" },
+    { "name": "/actions/common/in/drag_left",  "requirement": "optional", "type": "boolean" },
+    { "name": "/actions/common/in/drag_right", "requirement": "optional", "type": "boolean" },
+    { "name": "/actions/roll/in/grab",         "requirement": "optional", "type": "boolean" },
+    { "name": "/actions/roll/in/reset",        "requirement": "optional", "type": "boolean" },
+    { "name": "/actions/swim/in/reset",        "requirement": "optional", "type": "boolean" }
+  ],
+  "action_sets": [
+    { "name": "/actions/common", "usage": "leftright" },
+    { "name": "/actions/roll",   "usage": "leftright" },
+    { "name": "/actions/swim",   "usage": "leftright" }
+  ],
+  "default_bindings": [
+    { "controller_type": "knuckles",     "binding_url": "bindings_knuckles.json" },
+    { "controller_type": "oculus_touch", "binding_url": "bindings_oculus_touch.json" }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US",
+      "/actions/common": "Common",
+      "/actions/common/in/grip_left": "Left grip (swim / double-tap both to toggle)",
+      "/actions/common/in/grip_right": "Right grip (swim / double-tap both to toggle)",
+      "/actions/common/out/haptic": "Haptic feedback",
+      "/actions/common/in/drag_left": "Drag yourself with LEFT hand (hold)",
+      "/actions/common/in/drag_right": "Drag yourself with RIGHT hand (hold)",
+      "/actions/roll": "Roll world",
+      "/actions/roll/in/grab": "Grab and rotate",
+      "/actions/roll/in/reset": "Reset rotation",
+      "/actions/swim": "Swim",
+      "/actions/swim/in/reset": "Reset position"
+    }
+  ]
+}

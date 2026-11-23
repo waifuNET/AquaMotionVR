@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\artem\Desktop\PROJECTS\RollWorld\driver\build\CMakeFiles\3c2bc03d05164aa65f08b59545a60d4c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B2D74B81-D44B-34A3-BB46-E8A3BA85B851}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

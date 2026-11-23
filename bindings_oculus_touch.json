@@ -1,0 +1,49 @@
+{
+  "name": "AquaMotionVR default",
+  "controller_type": "oculus_touch",
+  "description": "Both grips double-tap = toggle mode. Roll: left stick click = grab, right stick click = reset. Swim: grips = grab water, right stick click = reset",
+  "action_manifest_version": 0,
+  "bindings": {
+    "/actions/common": {
+      "sources": [
+        {
+          "path": "/user/hand/left/input/grip",
+          "mode": "button",
+          "inputs": { "click": { "output": "/actions/common/in/grip_left" } }
+        },
+        {
+          "path": "/user/hand/right/input/grip",
+          "mode": "button",
+          "inputs": { "click": { "output": "/actions/common/in/grip_right" } }
+        }
+      ],
+      "haptics": [
+        { "output": "/actions/common/out/haptic", "path": "/user/hand/left/output/haptic" },
+        { "output": "/actions/common/out/haptic", "path": "/user/hand/right/output/haptic" }
+      ]
+    },
+    "/actions/roll": {
+      "sources": [
+        {
+          "path": "/user/hand/left/input/thumbstick",
+          "mode": "button",
+          "inputs": { "click": { "output": "/actions/roll/in/grab" } }
+        },
+        {
+          "path": "/user/hand/right/input/thumbstick",
+          "mode": "button",
+          "inputs": { "click": { "output": "/actions/roll/in/reset" } }
+        }
+      ]
+    },
+    "/actions/swim": {
+      "sources": [
+        {
+          "path": "/user/hand/right/input/thumbstick",
+          "mode": "button",
+          "inputs": { "click": { "output": "/actions/swim/in/reset" } }
+        }
+      ]
+    }
+  }
+}
